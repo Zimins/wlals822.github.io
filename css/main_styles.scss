@@ -1,0 +1,67 @@
+---
+---
+$menu-height: 60px;
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$base-font-size:   16px !default;
+$base-font-weight: 400 !default;
+$base-line-height: 1.5 !default;
+
+
+$text-color:       #111 !default;
+$background-color: #fbfbfb !default;
+$brand-color:      #2a7ae2 !default;
+
+
+
+body{
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+  color: $text-color;
+  background-color: $background-color;
+  margin-top: $menu-height;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 30px;
+}
+
+#post-background{
+  position:relative;
+  height:500px;
+  width:100%;
+  background-image: url(http://farm5.staticflickr.com/4135/4820238049_8e830ec494_b.jpg);
+  background-attachment:fixed;
+  background-size:100% 100%;
+  background-repeat:no-repeat;
+}
+
+#article{
+  position:relative;
+  z-index:2;
+  margin: 60px;
+
+}
+
+#menu_bar {
+  width: 100%;
+  height: $menu-height;
+  background-color: white;
+  border-style: solid;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 1px;
+  border-bottom-color: #eeeeee;
+  padding-left: 30px;
+  padding-right: 30px;
+  position: fixed;
+  z-index: 3;
+  top: 0px;
+  left: 0px;
+}
+
+#menu_bar p {
+  font-size:25px;
+}
+
+#custom_layout {
+  background-color: gray;
+}

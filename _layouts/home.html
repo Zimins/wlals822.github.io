@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> {{ site.title }} </title>
+    <link rel="stylesheet" href="/css/main_styles.css">
+</head>
+{% include header.html %}
+
+<body>
+
+    <div id="custom_layout">
+      <p>
+          this is custom home layout this is custom home layout
+      </p>
+    </div>
+
+
+    <ul>
+        {% for post in site.posts %}
+        <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+    {{ content }}
+   {% include footer.html %}
+</body>
+
+</html>

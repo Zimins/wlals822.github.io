@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: 지민의 괴발개발
+title: 지민의 개발개발
 email: wlals822@naver.com
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -25,10 +25,24 @@ facebook_username: wlals822
 github_username:  wlals822
 
 # Build settings
+# markdown: redcarpet
+
 markdown: kramdown
+kramdown:
+  input: GFM
+  hand_warp: false
+
+# kramdown:
+#   input: GFM
+markdown: redcarpet
+markdown_ext:  markdown,mkdown,mkdn,mkd,md
+
+redcarpet:
+  extensions: ["no_intra_emphasis","tables", "autolink", "strikethrough", "space_after_headers", "with_toc_data", "fenced_code_blocks", "lax_spacing", "smart"]
 theme: minima
 gems:
   - jekyll-feed
+  - redcarpet
 exclude:
   - Gemfile
   - Gemfile.lock
