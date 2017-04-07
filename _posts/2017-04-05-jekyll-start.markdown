@@ -49,7 +49,7 @@ categories: jekyll update
 
 드디어 지킬을 이해하였어
 지킬로 블로그를 만드는 포스팅!
-```JAVAVA
+```
 
 public void main(){
   //this is main method

@@ -1,5 +1,8 @@
 ---
 ---
+
+@import "minima";
+
 $menu-height: 60px;
 $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $base-font-size:   16px !default;
@@ -22,6 +25,12 @@ body{
   margin-right: 0px;
 }
 
+.fb-comments.fb_iframe_widget{
+  margin-left: 100px;
+}
+#bottom-content{
+  padding: 100px;
+}
 #post-background{
   position:relative;
   height:500px;
@@ -49,6 +58,7 @@ body{
   border-right-width: 0px;
   border-bottom-width: 1px;
   border-bottom-color: #eeeeee;
+  padding-top: 10px;
   padding-left: 30px;
   padding-right: 30px;
   position: fixed;
@@ -58,8 +68,9 @@ body{
 }
 
 #menu_bar p {
-  font-size:25px;
+  font-size:30px;
 }
+
 
 #custom_layout {
   background-color: gray;

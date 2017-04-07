@@ -28,6 +28,7 @@ github_username:  wlals822
 # markdown: redcarpet
 
 markdown: kramdown
+
 kramdown:
   input: GFM
   hand_warp: false
@@ -39,6 +40,7 @@ markdown_ext:  markdown,mkdown,mkdn,mkd,md
 
 redcarpet:
   extensions: ["no_intra_emphasis","tables", "autolink", "strikethrough", "space_after_headers", "with_toc_data", "fenced_code_blocks", "lax_spacing", "smart"]
+  
 theme: minima
 gems:
   - jekyll-feed
