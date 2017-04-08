@@ -2,9 +2,10 @@
 ---
 
 @import "minima";
+@import url(http://fonts.googleapis.com/earlyaccess/nanumbarungothic.css);
 
 $menu-height: 60px;
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$base-font-family: "Nanum Barun Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $base-font-size:   16px !default;
 $base-font-weight: 400 !default;
 $base-line-height: 1.5 !default;
@@ -25,11 +26,15 @@ body{
   margin-right: 0px;
 }
 
+a{
+  color: black;
+}
+
 .fb-comments.fb_iframe_widget{
-  margin-left: 100px;
+  margin-left: 40px;
 }
 #bottom-content{
-  padding: 100px;
+  padding: 60px;
 }
 #post-background{
   position:relative;
@@ -37,7 +42,7 @@ body{
   width:100%;
   background-image: url(http://farm5.staticflickr.com/4135/4820238049_8e830ec494_b.jpg);
   background-attachment:fixed;
-  background-size:100% 100%;
+  background-size:cover;
   background-repeat:no-repeat;
 }
 
@@ -49,6 +54,7 @@ body{
 }
 
 #menu_bar {
+
   width: 100%;
   height: $menu-height;
   background-color: white;
@@ -58,6 +64,7 @@ body{
   border-right-width: 0px;
   border-bottom-width: 1px;
   border-bottom-color: #eeeeee;
+  font-family: "Nanum Barun Gothic";
   padding-top: 10px;
   padding-left: 30px;
   padding-right: 30px;
