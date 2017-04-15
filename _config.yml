@@ -16,9 +16,7 @@
 title: 지민의 개발개발
 email: wlals822@naver.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  android를 재밌게 배우고 있는 개발자입니다. 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 facebook_username: wlals822
@@ -40,7 +38,7 @@ markdown_ext:  markdown,mkdown,mkdn,mkd,md
 
 redcarpet:
   extensions: ["no_intra_emphasis","tables", "autolink", "strikethrough", "space_after_headers", "with_toc_data", "fenced_code_blocks", "lax_spacing", "smart"]
-  
+
 theme: minima
 gems:
   - jekyll-feed
