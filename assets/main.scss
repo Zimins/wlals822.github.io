@@ -20,11 +20,23 @@ $brand-color:      #2a7ae2 !default;
 body{
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
   color: $text-color;
+  position: relative;
   background-color: $background-color;
-  margin-top: $menu-height;
-  padding: 60px;
+  margin-top: 60px;
+  min-height: 700px;
 }
 
+#left-bar{
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+#post-list{
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  width: 60%;
+}
 a{
   color: black;
 }
@@ -35,7 +47,7 @@ a{
 #bottom-content{
   padding: 60px;
 }
-ul .post-item {
+.post-item {
   border-color: black;
   border-width: 2px;
 }
@@ -57,7 +69,6 @@ ul .post-item {
 }
 
 #menu_bar {
-
   width: 100%;
   height: $menu-height;
   background-color: white;
@@ -68,32 +79,92 @@ ul .post-item {
   border-bottom-width: 1px;
   border-bottom-color: #eeeeee;
   font-family: "Nanum Barun Gothic";
-  padding-top: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 10px;
   position: fixed;
   z-index: 3;
   top: 0px;
   left: 0px;
 }
 
-#menu_bar p {
+#menu_bar #menu_content {
   font-size:30px;
+  position: relative;
 }
 
 #links {
-  float: right;
+  position: absolute;
+  top:0px;
+  right: 200px;
 }
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 200px;
+  margin: auto;
+  text-align: center;
+  float: left;
+  font-family: arial;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+ul {
+  position: relative;
+  width: 90%;
+  list-style-type: none;
+}
+
 
 #footer {
   background-color: white;
+  position: absolute;
+  left: 10%;
+  bottom: 20px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  width: 100%;
+  width: 80%;
   border-radius: 5px;
-  padding: 30px;
 }
 
 #footer :hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+#footer img {
+  float: left;
 }
