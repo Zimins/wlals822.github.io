@@ -23,12 +23,16 @@ body{
   position: relative;
   background-color: $background-color;
   margin-top: 60px;
+  padding-bottom: 600px;
   min-height: 700px;
 }
 
+#content {
+  position: relative;
+}
 #left-bar{
-  position: absolute;
-  top: 10%;
+  position: fixed;
+  top: 30%;
   left: 5%;
 }
 #post-list{
@@ -61,6 +65,18 @@ a{
   background-repeat:no-repeat;
 }
 
+#home-background{
+  position:relative;
+  height:300px;
+  width:100%;
+  vertical-align: middle;
+  background-image: url('/assets/cafe.jpg');
+  background-attachment:fixed;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+
+
 #article{
   position:relative;
   z-index:2;
@@ -80,6 +96,7 @@ a{
   border-bottom-color: #eeeeee;
   font-family: "Nanum Barun Gothic";
   padding: 10px;
+  padding-left: 5%;
   position: fixed;
   z-index: 3;
   top: 0px;
