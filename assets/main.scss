@@ -57,9 +57,8 @@ a{
 }
 #post-background{
   position:relative;
-  height:500px;
+  min-height:300px;
   width:100%;
-  background-image: url(http://farm5.staticflickr.com/4135/4820238049_8e830ec494_b.jpg);
   background-attachment:fixed;
   background-size:cover;
   background-repeat:no-repeat;
