@@ -50,6 +50,7 @@ a{
 }
 #bottom-content{
   padding: 60px;
+  padding-left: 150px;
 }
 .post-item {
   border-color: black;
@@ -79,8 +80,11 @@ a{
 #article{
   position:relative;
   z-index:2;
-  margin: 60px;
-
+  font-size: larger;
+  padding: 100px;
+  padding-left: 200px;
+  padding-right: 200px;
+  box-shadow: 0px -50px 150px #888888;
 }
 
 #menu_bar {
