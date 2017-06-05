@@ -2,6 +2,7 @@
 layout: post
 title:  "jekyll first"
 date:   2017-04-05 23:30:00 +0900
+tags: jekyll
 categories: jekyll update
 ---
 
