@@ -1,5 +1,83 @@
 ---
 ---
-    <p>
-      this is home page.
-    </p>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> {{ site.title }} </title>
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-98127281-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</head>
+
+{% include header.html %}
+
+<body>
+
+  <div id="home-background">
+  </div>
+  <div id="content">
+
+    <div id="left-bar">
+      <div class="card">
+        <img src="/assets/myprofile.jpg" alt="John" style="width:100%">
+        <div class="container">
+          <h1>Zimin Byun</h1>
+          <p class="title">Android Developer</p>
+          <p>NHN NEXT</p>
+          <p>미완성블로그입니다.</p>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <p><button>Contact</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div id="post-list">
+      <ul>
+        {% for post in paginator.posts %}
+        <li class="post-item">
+          <p>
+            {{ post.date | date:"%B %d %y"}}
+          </p>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+          <p>tag : {{ post.tags }}</p>
+
+          <hr>
+        </li>
+        {% endfor %}
+      </ul>
+
+      <div class="pagination">
+        {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a> {% else %}
+        <span class="previous">Previous</span> {% endif %}
+        <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span> {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}" class="next">Next</a> {% else %}
+        <span class="next ">Next</span> {% endif %}
+      </div>
+      
+    </div>
+
+
+
+  </div>
+  <!-- {% include footer.html %} -->
+</body>
+
+</html>
