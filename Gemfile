@@ -23,6 +23,7 @@ gem "minima", "~> 2.0"
 group :jekyll_plugins do
    gem "jekyll-feed", "~> 0.6"
    gem "redcarpet", "~> 2.3"
+   gem "jekyll-paginate", "~> 1.1"
    gem "albino", "~> 1.3"
 end
 
