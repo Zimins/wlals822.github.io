@@ -1,16 +1,20 @@
 ---
 layout: post
 title: ButterKnife 라이브러리 설정
-tag: ButerKnife, Android
+tag: ButterKnife, android, butterknife newline
+categories: android
+image_url: http://3.bp.blogspot.com/-ZsQGMgHYUfE/VZqNVpdvd6I/AAAAAAAAATY/rW1GtlmJ7ss/s1600/butterknife.jpg
 ---
 
-# Butterknife + 코드포맷 설정
+# Butterknife + 코드포맷 설정(자동 newline 제거하기)
 
 
 
 귀찮은 findViewById 를 생략하게 해주는 Butterknife 라는 아주 좋은 라이브러리.
 
-하지만 이걸 그냥 사용한다면 코드 자동 정렬을 할때 아래와 같이 만들어진다. 
+http://jakewharton.github.io/butterknife/
+
+하지만 이걸 그냥 사용한다면 코드 자동 정렬을 할때 아래와 같이 만들어진다.
 
 
 
@@ -21,19 +25,19 @@ tag: ButerKnife, Android
 @BindView Button btn_save;//간결!
 
 //git 등을 위하여 reformat을 할때 이렇게 스튜디오가 만들어준다.
-@BindView 
+@BindView
 TextView name;
-@BindView 
+@BindView
 TextView age;
-@BindView 
+@BindView
 Button btn_save; //BindView 어노테이션 때문에 계속 줄바꿈을 한다.
 ```
 
 
 
-화면에 들어가는 뷰 요소가 많다면 쓸데없이 개행을 많이 하는것 같은 느낌이 든다. 매번 reformat 후 바꾸어 줄수도 없다. 
+화면에 들어가는 뷰 요소가 많다면 쓸데없이 개행을 많이 하는것 같은 느낌이 든다. 매번 reformat 후 바꾸어 줄수도 없다.
 
-그렇다면 reformat 설정을 바꾸어보자. 
+그렇다면 reformat 설정을 바꾸어보자.
 
 
 
